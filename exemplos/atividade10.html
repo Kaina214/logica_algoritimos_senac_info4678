@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text"id="altura">
+    <br><input type="text"id="largura">
+    <button onclick="exibeDadoDigitado()">e.os.guri</button>
+    <script>
+        function exibeDadoDigitado(){
+            var altura = document.getElementById("altura").value;
+            var largura = document.getElementById("largura").value;
+            var area = altura * largura;
+            var litro = 2;
+            var tinta = area / litro;
+            alert("a area de " + area + " preciso de " + tinta + "L de tinta");
+
+        }
+    </script>
+   
+
+</body>
+</html>
