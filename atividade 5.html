@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="nota">
+    <br><input type="text" id = "nota2">
+    <button onclick="exibeDadoDigitado()">e.os.guri </button>
+    <script>
+        function exibeDadoDigitado(){
+            var nota = document.getElementById("nota").value;
+            var nota2 =document.getElementById("nota2").value;
+            var resultado = Number(nota) + Number(nota2);
+            var divisão = resultado / 2;
+            alert(" " + nota + " + " + nota2 + " = " + resultado + " / " + divisão);
+
+        }
+        </script>
+</body>
+</html>

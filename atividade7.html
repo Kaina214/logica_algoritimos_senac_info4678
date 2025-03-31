@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="real">
+    
+    <button onclick="exibeDadoDigitado()">e.os.guri </button>
+    <script>
+        function exibeDadoDigitado(){
+            var real = document.getElementById("real").value;
+            var dobro = Number(real) * 2;
+            var tercaparte = Number(real) / 3;
+            alert("o dobro de " + real + " é " + dobro  + " sua terça parte " + real + " é " + tercaparte);
+        }
+    </script>
+</body>
+</html>

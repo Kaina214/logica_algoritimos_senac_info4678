@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converção</title>
+</head>
+<body>
+    
+    <br><input type="text" id="dinheiro">
+    <button onclick="exibeDadoDigitado()">e.os.guri </button>
+    <script>
+        function exibeDadoDigitado(){
+          
+           var dinheiro = Number(document.getElementById("dinheiro").value);
+           var dolar = Number(dinheiro)/5.76;
+
+           alert( dinheiro + "=" + dolar)
+        }
+
+    </script>
+
+</body>
+</html>
