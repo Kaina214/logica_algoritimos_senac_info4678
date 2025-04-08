@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="AnoDeNascimento">
+    <button onclick="leiaAnoDeNascimento()">e.os.guri</button>
+    <script>
+        function leiaAnoDeNascimento(){
+            var anoDeNascimento = document.getElementById("AnoDeNascimento").value;
+            var dataAtual = new Date();
+            var idade = dataAtual.getFullYear() - anoDeNascimento;
+            if(idade < 18){
+                alert("Você não pode votar!");
+            }else{
+                alert("Você pode votar!");
+            }
+        }
+    </script>
+</body>
+</html>
