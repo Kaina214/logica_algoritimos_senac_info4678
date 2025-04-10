@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="name">
+    <br><input type="text" id="notaA">
+    <br><input type="text" id="notaB">
+    <button onclick="exibaNota()">e.os.guri</button>
+    <script>
+        function exibaNota(){
+            var name = document.getElementById("name").value;
+            var notaA = Number(document.getElementById("notaA").value)
+            var notaB = Number(document.getElementById("notaB").value)
+            var resultado = (notaA * notaB)/2;
+            if(resultado < 7.0){
+                alert("voce foi reprovado");
+            }
+               else{alert("voce esta aprovado");
+        }
+    }
+    </script>
+</body>
+</html>
