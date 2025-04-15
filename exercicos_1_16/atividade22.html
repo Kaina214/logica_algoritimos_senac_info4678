@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br> <input type="text" id="anoDeNascimento">
+    <button onclick="alistamentoMilitar()">e.os.guri</button>
+    <script>
+        function alistamentoMilitar(){
+        var anoDeNascimento = document.getElementById("anoDeNascimento").value;
+        var AnoAtual = 2025;
+        var idade = 2025 - anoDeNascimento;
+        var AnossePassaram = idade - 18;
+        var AnosFaltam = 18 - idade;
+        if(idade<18){
+            alert(" Faltam " + AnosFaltam + " para voce se alistar");
+
+        }else{
+            alert("Se passaram " + AnossePassaram + " que voce não se alistou");
+
+
+
+        }
+    }
+      
+
+    </script>
+</body>
+</html>

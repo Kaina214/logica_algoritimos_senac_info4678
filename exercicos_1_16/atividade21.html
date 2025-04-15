@@ -16,19 +16,21 @@
             {
                 if(ANO %100 != 0)
                 { 
-                    if(ANO %400 == 0)
-                    {
-                        alert("ano bissexto");    
-                    }
-                    else{
-                        alert("dwdko")
-                    }
+                    alert("ano bissexto");
                 }
                 else{
-                    alert("ssa")
+
+                if(ANO %400 == 0)
+                {
+                        alert("ano bissexto")
+                }
+                else{
+                    alert("ano")
                 }
             }
-            else{
+            }
+            else
+            {
                 alert("ano");
             }
     }

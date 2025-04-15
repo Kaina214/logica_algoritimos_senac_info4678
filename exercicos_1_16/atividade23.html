@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="name">
+    <br><input type="text" id="sexo">
+    <br><input type="text" id="preço">
+
+    <button onclick="calcularDesconto()">aham</button>
+    <script>
+        function calcularDesconto(){
+            var name = document.getElementById("name").value;
+            var sexo = document.getElementById("sexo").value;
+            var preço = parseFloat(document. getElementById("preço").value);
+
+            if(sexo == "Masculino"){
+            var final = preço -  (preço * 5 / 100)
+
+          alert("sua compra ficou " + preço + " , aplicando o desconto de 5% voce pagara um total de " + final)  
+            
+        }
+    
+
+        
+        else if(sexo = "Feminino"){
+        var final2 = preço - (preço * 13 / 100)
+            alert("Sua compra ficou R$ " + preço + " , aplicando o desconto de 13% voce pagara um total de " + final2);
+            
+        }
+    }
+    
+    
+    
+
+    </script>
+</body>
+</html>

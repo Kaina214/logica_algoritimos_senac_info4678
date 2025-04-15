@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distância</title>
+</head>
+<body>
+    <br><input type="text" id="km">
+    <button onclick="CalcularPassagem()" >e.os.guri</button>
+    <script>
+        function CalcularPassagem(){
+            var km = document.getElementById("km").value;
+            var menos200 = km * 0.50;
+            var mais200 = km * 0.45;
+            
+            if(km <= 200){
+                alert("Sua distância percorrida foi de" + km + "km, e o preço a ser pago é de R$" + menos200);
+            }
+            else{ 
+                alert("Sua distância percorrida foi de" + km + "km, e o preço a ser pago é de R$" + mais200);
+            }
+        }
+    </script>
+</body>
+</html>
