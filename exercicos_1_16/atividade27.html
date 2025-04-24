@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="nota1">
+    <br><input type="text" id="nota2">
+    <button onclick="LeiaNota()">e.os.guri</button>
+    <script>
+        function LeiaNota(){
+        var nota1 = Number(document.getElementById("nota1").value);
+        var nota2 = Number(document.getElementById("nota2").value);
+        var final = (nota1 + nota2)/2;
+
+        if(final <= 4.9){
+            alert("REPROVADO ");
+        }else if(final >= 5.0 && final <= 6.9){
+            alert("RECUPERAÇÃO ");
+        }else{
+            alert("APROVADO");
+        }
+
+        }
+    </script>
+</body>
+</html>

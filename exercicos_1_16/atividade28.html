@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="largura">
+    <br><input type="text" id="comprimento">
+    <button onclick="LeiaTerreno()" >e.os.guri</button>
+    <script>
+        function LeiaTerreno(){
+            var largura = Number(document.getElementById("largura").value);
+            var comprimento = Number(document.getElementById("comprimento").value);
+            var metro2 = largura * comprimento;
+            
+            if(metro2 < 100){
+                alert("TERRENO POPULAR ");
+            }else if(metro2 >= 100 && metro2 < 500){
+                alert("TERRENO Master ");
+            }else if (metro2 > 500) {    
+                alert("TERRENO VIP ");
+            }
+        } 
+    </script>
+</body>
+</html>
