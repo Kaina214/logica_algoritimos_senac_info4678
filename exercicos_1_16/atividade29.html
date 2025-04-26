@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="name">
+    <br><input type="text" id="SeuSalario">
+    <br><input type="text" id="anosTrabalhados">
+    <button onclick="LeiaSalario()" >e.os.guri</button>
+    <script>
+        function LeiaSalario(){
+            var name = document.getElementById("name").value;
+            var SeuSalario = Number(document.getElementById("SeuSalario").value);
+            var anosTrabalhados = Number(document.getElementById("anosTrabalhados").value);
+             
+            if(anosTrabalhados < 3){
+                var aumento1 = (SeuSalario * 0.03) + SeuSalario;
+                alert( name + " " + " de acordo com seus anos trabalhados " + " " + anosTrabalhados + " " + " teve um aumento de 3% " + aumento1)
+            }else if(anosTrabalhados == 3 && anosTrabalhados < 10 ){
+                var aumento2 = (SeuSalario * 0.125) + SeuSalario;
+                alert(name + " " + " de acordo com seus anos trabalhados " + " " + anosTrabalhados + " " + " teve um aumento de 12,5% " + aumento2)
+            }else if(anosTrabalhados >= 10){
+                var aumento3 = (SeuSalario * 0.20) + SeuSalario;
+                alert(name + " " + " de acordo com seus anos trabalhados " + " " + anosTrabalhados + " " + " teve um aumento de 20% " + aumento3)
+            }
+        }
+    </script>
+</body> 
+</html>
