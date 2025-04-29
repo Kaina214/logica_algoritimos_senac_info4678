@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <br><input type="text" id="OpcaoPlayer1" placeholder="Digite uma opçâo">
+   <br><input type="text" id="OpcaoPlayer2" placeholder="Digite uma opçâo">
+   <button onclick="resultadoDosJogadores()" >click</button>
+   <script>
+    function resultadoDosJogadores(){
+        var OpcaoPlayer1 = document.getElementById("OpcaoPlayer1").value;
+        var OpcaoPlayer2 = document.getElementById("OpcaoPlayer2").value;
+
+        if(OpcaoPlayer1 == "pedra" && OpcaoPlayer2 == "tesoura"){
+            alert("jogador 1 venceu")
+        }else if(OpcaoPlayer1 == "tesoura" && OpcaoPlayer2 == "papel"){
+            alert("jogador 1 venceu")
+        }else if(OpcaoPlayer1 == "papel" && OpcaoPlayer2 == "pedra"){
+            alert("jogador 1 venceu")
+        }else if(OpcaoPlayer2 == "tesoura" && OpcaoPlayer1 == "papel"){
+            alert("ogador 2 venceu")
+        }else if(OpcaoPlayer2 == "papel" && OpcaoPlayer1 == "pedra"){
+            alert("jogador 2 venceu")
+        }else if(OpcaoPlayer2 == "pedra" && OpcaoPlayer1 == "tesoura"){
+            alert("jogador 2 venceu")
+        }else{
+            alert("error");
+        }
+        
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="number" name="OpcaoPlayer1" id="OpcaoPlayer1">
+    <button onclick="digitioNumero()" >clicke</button>
+    <script>
+        function digitioNumero(){
+            var valores = [1,2,3,4,5];
+            var resultado = Math.floor(Math.random() *3) + 1;
+            var OpcaoPlayer1 = document.getElementById("opcaoPlayer1").value;
+
+            if(resultado == OpcaoPlayer1){
+                alert("voce acertou" + resultado)
+            }else{
+                alert("voce errou" + valores);
+            }
+
+        }
+    </script>
+</body>
+</html>
