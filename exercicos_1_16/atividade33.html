@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="number" id="valorCasa">
+    <br><input type="number" id="salario">
+    <br><input type="number" id="quantosAnos">
+    <button onclick="aprovarEmprestimo()" >aham</button>
+
+    <script>
+        function aprovarEmprestimo(){
+            var valorCasa = Number(document.getElementById("valorCasa").value);
+            var salario = Number(document.getElementById("salario").value);
+            var quantosAnos = Number(document.getElementById("quantosAnos").value);
+            var prestasaoMensal = valorCasa / (quantosAnos * 12);
+            var limiteMensal =  salario * 0.3;
+           
+            if(prestasaoMensal <= limiteMensal){
+                alert("Voce teve o empréstimo aprovado, o valor da pestação mensal será de " + limiteMensal);
+            }else{
+                alert("Seu empréstimo foi negado");
+            }
+        }
+    </script>
+</body>
+</html>
