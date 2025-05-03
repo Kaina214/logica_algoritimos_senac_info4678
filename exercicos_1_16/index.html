@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="text" id="alugelCarro">
+    <br><input type="text" id="kmPercorrido">
+    <br><input type="text" id="tipoCarro">
+    <button onclick="leiaTipoCarro()" ></button>
+    <script>
+        function leiaTipoCarro(){
+            var alugelCarro = document.getElementById("alugelCarro").value;
+            var kmPercorrido = document.getElementById("kmPercorrido").value;
+            var tipoCarro = document.getElementById("tipoCarro").value;
+
+            if(tipoCarro == "luxo")
+            {
+                var valorAluguel = alugelCarro * 150;
+                if(200 > kmPercorrido){
+                    var valorkmPercorrido = kmPercorrido * 0.25;
+                    var soma = valorAluguel + kmPercorrido;
+                    alert("voce deve pagar" +soma)
+                }else{
+                    var valorkmPercorrido = kmPercorrido * 0.30;
+                    var soma = valorAluguel + kmPercorrido;
+                    alert("voce deve pagar" + soma);
+                }    
+            }else{
+                if(100 > kmPercorrido){
+                    var valorAluguel2 = alugelCarro * 90;
+                    var valorkmPercorrido2 = kmPercorrido * 0.20;
+                    var soma2 = valorAluguel + kmPercorrido;
+                    alert("voce deve pagar" + soma2);
+                }else{
+                    var valorkmPercorrido3 = kmPercorrido * 0.10;
+                    var soma2 = valorAluguel + kmPercorrido;
+                    alert("voce deve pagar" + soma2)
+                }
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
