@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="number" id="salarioAtual"> 
+    <br><input type="text" id="generoDoFuncionario"> 
+    <br><input type="number" id="anosDeTrabalho">
+    <button onclick="leiaNovoSalario()" ></button>
+    <script>
+        function leiaNovoSalario(){
+            var salarioAtual = Number(document.getElementById("salarioAtual").value);
+            var generoDoFuncionario = document.getElementById("generoDoFuncionario").value;
+            var anosDeTrabalho = Number(document.getElementById("anosDeTrabalho").value);
+            if(generoDoFuncionario == "F"){
+                if(anosDeTrabalho < 15){
+                    var aumento = aumento * 0.05;
+                    alert("Mulheres - menos de 15 anos de empresa" + aumento)
+                }else if(anosDeTrabalho >= 15 && anosDeTrabalho <= 20){
+                    aumento2 = aumento2 * 0.12;
+                    alert("de 15 até 20 anos de empresa" + aumento2)
+                }else{
+                    var aumento3 = aumento3 * 0.23;
+                    alert("mais de 20 anos de empresa" + aumento3)
+
+                }  if(generoDoFuncionario == "M"){
+                    if(anosDeTrabalho < 20){
+                        aumento4 = aumento4 * 0.03;
+                        alert("Homens - menos de 20 anos de empresa" + aumento4)
+                    }else if(anosDeTrabalho >= 20 && anosDeTrabalho <= 30){
+                        var aumento5 = aumento5 * 0.13;
+                        alert("de 20 até 30 anos de empresa" + aumento5)
+                    }else {
+                        var aumento6 = aumento6 * 0.25;
+                        alert("mais de 30 anos de empresa" +aumento6)
+                    }
+                }
+            }
+        }
+    </script> 
+</body>
+</html>
