@@ -7,17 +7,15 @@
 </head>
 <body>
     <script>
-
+        window.onload = function(){
            var descricao = "";
-           for(var i = 30; i >= 1 ; i --){
-            if(i%4 == 0 )
-
-           descricao = descricao + " [ " + i + " ] ";
-           else
-           descricao = descricao + "  " + i + "  ";}
-           descricao = descricao + " Acabou";
+           for(i = 100; i >= 0; i-=5){
+           descricao = descricao + i + " ";
+           }
+           descricao = descricao + "Acabou";
            alert(descricao)   
-                  
+          }
+
            
                
               
