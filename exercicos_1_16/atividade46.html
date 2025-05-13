@@ -8,15 +8,15 @@
 <body>
     <script>
         window.onload = function(){
-            var pos =  Number(prompt("Digite o valor inicial"));
-            var meio =  Number(prompt("Digite o valor do meio"));
-           var descricao = "";
-           for(i = pos ; i <= meio; i+=2){
-           descricao = descricao + i + " ";
+           var resultado = 0;
+           for(i = 6 ; i <= 100; i+=2)
+           {
+           resultado = resultado + i;
            }
-           descricao = descricao + "Acabou";
-           alert(descricao)   
-          }
+          resultado = resultado + " Acabou";
+           alert(resultado)}
+        
+        
 
            
                
