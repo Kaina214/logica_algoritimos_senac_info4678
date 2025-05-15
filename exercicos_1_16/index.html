@@ -6,24 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+    
     <script>
-        window.onload = function()
-        {
-           var resultado = " ";
-            var par = 0;
-            var impar = 0;
-
-            for(i = 0; i <= 6 ; i++)
-            {
-                var teste = Number(prompt("teste"));
-                
-                if(teste % 2 == 0){
-                    par++;
+        window.onload = function(){
+            var resultado = Math.floor(Math.random() *11);
+            for(var i = 0; i <= 20; i ++){
+                if(resultado == i){
+                    console.log("você sortiou " + i)
+                }else if(resultado >= 5){
+                    console.log(resultado + " são acime de 5");
+                }else if((resultado / 0.03) == 0){
+                    console.log(resultado + " são divisíveis por 3" );
                 }else{
-                    impar++;
-                } 
-            }   
-        } 
-        </script>
+                    console.log("ERROR")
+                }
+            }
+        }
+    </script>
 </body>
 </html>
