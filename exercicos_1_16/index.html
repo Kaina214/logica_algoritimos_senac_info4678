@@ -6,22 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script>
-        window.onload = function(){
-            var resultado = Math.floor(Math.random() *11);
-            for(var i = 0; i <= 20; i ++){
-                if(resultado == i){
-                    console.log("você sortiou " + i)
-                }else if(resultado >= 5){
-                    console.log(resultado + " são acime de 5");
-                }else if((resultado / 0.03) == 0){
-                    console.log(resultado + " são divisíveis por 3" );
-                }else{
-                    console.log("ERROR")
+        <script>
+        window.onload = function()
+        {
+            
+            var maioePreco = null;
+            var menorPreco = null;
+            var valorMaiorOuMenor = 0;
+            for( i = 0; i < 8; i ++)
+            {
+                 var teste = Number(prompt("teste"));
+                
+                 if(teste >= maioePreco || maioePreco == null);
+                 {
+                     maioePreco = teste;
+                 }
+
+                if(teste <= menorPreco || menorPreco == null)
+                {
+                    menorPreco = teste;
                 }
-            }
-        }
+            } console.log("maior preço [ " + maioePreco + " ] menor preço [ " + menorPreco + " ]")
+         }
     </script>
 </body>
 </html>

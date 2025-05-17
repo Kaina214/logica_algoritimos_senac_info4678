@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        window.onload = function()
+        {
+            var valoresMaioresQue5 = 0;
+            var valoresDivisiveisPor3 = 0;
+            var todosOsValoresRamdomizados = "";
+            for(var i = 0; i < 20; i ++)
+            {
+                var resultado = Math.floor(Math.random() *10);
+                todosOsValoresRamdomizados = todosOsValoresRamdomizados + " - " + resultado;
+
+                if(resultado >= 5)
+                {
+                    valoresMaioresQue5 += 1;
+                }
+                if(resultado%3 == 0)
+                {
+                    valoresDivisiveisPor3 += 1
+                }
+            } 
+            alert("Quais foram os números sorteados [" + todosOsValoresRamdomizados + " ] Quantos números estão acima de 5 [ " + valoresMaioresQue5 + " ] Quantos números são divisíveis por 3 [" + valoresDivisiveisPor3 + " ]")
+        }
+    </script>
+</body>
+</html>
