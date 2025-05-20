@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        window.onload = function(){
+            var media =0;
+            var idade18 =0;
+            var maiorIdadeLida =0;
+            var menorDe5 =0;
+            for( var i = 0; i < 10; i ++){
+                var idadeDigitada = Number(prompt("idadeDigitada"));
+                media = media + idadeDigitada;
+                 if(idadeDigitada > 18){
+                   idade18 += 1;
+                 }
+                 if(idadeDigitada < 5)
+                {
+                   menorDe5 += 1;
+                }
+                if(idadeDigitada >= maiorIdadeLida)
+                {
+                    maiorIdadeLida = idadeDigitada
+                } 
+            } media = media /10; 
+            console.log("A média de idade do grupo  é :" + media + " Foram maior de 18 : " + idade18 + " Foram menores de 5 : " + menorDe5 + " Foram a maior idade lida " + maiorIdadeLida)
+         }
+    </script>
+</body>
+</html>
