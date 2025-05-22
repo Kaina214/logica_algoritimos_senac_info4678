@@ -6,37 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-  <script> 
-  //a) Quantos homens foram cadastrados 
-  //  b) Quantas mulheres foram cadastradas 
-   //c) A média de idade do grupo 
-//d) A média de idade dos homens 
-//e) Quantas mulheres tem mais de 20 anos 
- window.onload = function(){
-            
-            var mediaIdadeGrupo =0;
-            var somaIdadesHomens =0;
-            var mulheresCadastradasMais20 =0;
-            for( var i = 0; i < 5; i ++){
-                var idadeDigitada = Number(prompt("idadeDigitada"));
-                var sexo = prompt("sexo");
-                
-
-                 if( sexo )
-                 {
-                  
-                 }
-                 if(idadeDigitada == sexo)
-                {
-                   sexo += 1
-                }
-                if(idadeDigitada == mulheresCadastradas)
-                {
-                    mulheresCadastradas += 1
-                } 
-            } mediaIdadeGrupo = somaIdadesHomens / 5 
-            console.log()
-         }
-</script>
+    <script>
+       
+    //    window.onload = function(){
+    //     var kk = 0;
+    //     var soma = 0;
+    //     var i = 0;
+    //     while(i == 0)
+    //     {
+    //         var valorDigitado = Number(prompt("Digite um valor"))
+    //         if(valorDigitado != 1111)
+    //          kk += valor;
+    //         soma += valorDigitado;
+    //     }
+    //     {
+    //         i = 1;
+    //     }
+    //    }
+     window.onload = function(){
+        var arraiDeNomes = ( "João"," Nairo", "Pedro");
+        for(var i = 0; i < arraiDeNomes.length; i ++)
+        {
+            arraiDeNomes[1] = "Nome igual " + 1;
+        }
+        console.log(arraiDeNomes[1]);
+     }
+       
+    </script>
 </body>
 </html>

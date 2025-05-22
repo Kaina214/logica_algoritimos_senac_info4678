@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script> 
+  //a) Quantos homens foram cadastrados 
+  //  b) Quantas mulheres foram cadastradas 
+   //c) A média de idade do grupo 
+//d) A média de idade dos homens 
+//e) Quantas mulheres tem mais de 20 anos 
+ window.onload = function(){
+            var somaIdades = 0;
+            var mediaIdadeGrupo =0;
+            var somaIdadesHomens =0;
+            var quantidadeDeHomens = 0;
+            var mulheresCadastradasMais20 =0;
+            var mediaHomens =0;
+            for( var i = 0; i < 5; i ++){
+                var idadeDigitada = Number(prompt("idadeDigitada"));
+                var sexo = prompt("sexo");
+                somaIdades = somaIdades + idadeDigitada;
+                 if("M" == sexo)
+                {
+                   somaIdadesHomens += idadeDigitada;
+                   quantidadeDeHomens++;
+                }
+                if("F" == sexo)
+                {
+                    mulheresCadastradas += 1
+                    idadeDigitada
+
+                if( idadeDigitada > 20)
+                     {
+                        mulheresCadastradasMais20++;
+                     }
+                } 
+            }
+            mediaHomens = somaIdades / quantidadeDeHomens;
+            mediaIdadeGrupo = somaIdades / 5;
+            console.log("Foram cadrastados : " + M + F + " A média do grupo ficou :" + mediaIdadeGrupo + " A média dos homens é de : " + mediaHomens +  " Foram cadrastados  " + mulheresCadastradasMais20 + " mulheres cadrastradas ")
+         }
+</script>
+</body>
+</html>
