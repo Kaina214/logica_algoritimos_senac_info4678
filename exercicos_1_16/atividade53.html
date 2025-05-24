@@ -13,6 +13,7 @@
 //d) A média de idade dos homens 
 //e) Quantas mulheres tem mais de 20 anos 
  window.onload = function(){
+            var mulheresCadastradas = 0;
             var somaIdades = 0;
             var mediaIdadeGrupo =0;
             var somaIdadesHomens =0;
@@ -31,9 +32,9 @@
                 if("F" == sexo)
                 {
                     mulheresCadastradas += 1
-                    idadeDigitada
+                    
 
-                if( idadeDigitada > 20)
+                    if( idadeDigitada > 20)
                      {
                         mulheresCadastradasMais20++;
                      }
@@ -41,7 +42,7 @@
             }
             mediaHomens = somaIdades / quantidadeDeHomens;
             mediaIdadeGrupo = somaIdades / 5;
-            console.log("Foram cadrastados : " + M + F + " A média do grupo ficou :" + mediaIdadeGrupo + " A média dos homens é de : " + mediaHomens +  " Foram cadrastados  " + mulheresCadastradasMais20 + " mulheres cadrastradas ")
+            console.log("Foram cadrastados : " + "M" + "F" + " A média do grupo ficou :" + mediaIdadeGrupo + " A média dos homens é de : " + mediaHomens +  " Foram cadrastados  " + mulheresCadastradasMais20 + " mulheres cadrastradas ")
          }
 </script>
 </body>
