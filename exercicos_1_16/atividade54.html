@@ -6,6 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        //54) Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando no final:
+        //a) Qual foi a média de altura do grupo 
+        //b) Quantas pessoas pesam mais de 90Kg 
+        //c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m 
+        //d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg. 
+
+        window.onload = function(){
+            var mediaAltura =0;
+            var mais90Kg =0;
+            var menos50Kg =0;
+            var altura160 =0;
+            var altura190 = 0;
+            var mais100Kg = 0;
+            for( var i = 0; i < 7; i ++){
+                var pesoDigitado = Number(prompt("pesoDigitado"));
+                var alturaDigitada = Number(prompt("alturaDigitada"));
+                mediaAltura = mediaAltura + alturaDigitada;
+                 if(pesoDigitado > 90){
+                   mais90Kg += 1;
+                 }
+                 if(pesoDigitado > 50 && alturaDigitada < 160)
+                {
+                  pesoDigitado += 1;
+                  alturaDigitada += 1;
+                }
+                if(pesoDigitado > "100Kg" && alturaDigitada > 190)
+                {
+                     pesoDigitado +=1
+                     alturaDigitada +=1
+                } 
+            } mediaAltura = mediaAltura / 7; 
+            console.log(" A média de altura do grupo   é : " + mediaAltura + " pessoas que pesam mais de " + 90  + mais90Kg + " pessoas que pesam menos de  50 "v+ " tem menos de 1.60m " + altura160 + " " + pesoDigitado + " pessoas que medem mais de 1.90m pesam mais de 100Kg : " + pesoDigitado + " " + alturaDigitada)
+         }
+    </script>
 </body>
 </html>
