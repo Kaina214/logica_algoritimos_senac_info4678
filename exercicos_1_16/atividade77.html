@@ -9,14 +9,11 @@
     <script>
         window.onload = function(){
             var arraiDeNumeros = [];
-            for(var i = 0; i < 16; i++){
-            if(i < 2)
-            {
-                 arraiDeNumeros[i] = 1;
-            }else
-            {
-                 arraiDeNumeros[i] = arraiDeNumeros [i -1] + arraiDeNumeros [i -2];
-            }
+            for(var i = 0; i < 7; i++){
+            var resultado = prompt("Digite seu nome");
+        
+            arraiDeNumeros[i] = resultado;
+              
         } console.log(arraiDeNumeros);
     }
     </script>
