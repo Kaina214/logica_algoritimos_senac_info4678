@@ -11,19 +11,19 @@
           //  No final, mostre quais são os números pares que foram digitados
           //  e em que posições eles estão armazenados.
         window.onload = function(){
-            var arraiDeNumeros = [];
-            var numeroPar = null;
+            var numeroPar = [];
+            var posicaoPar = [];
 
             for(var i = 0; i < 10; i++){
+              var resultado =  Number(prompt("Digite seu número"));
                 if( i%2 == 0)
             {
-                numeroPar += 1;
-            }
-            var resultado =  Number(prompt("Digite seu número"));
-        
-            arraiDeNumeros[i] = resultado;
+               numeroPar.push(resultado)
+               posicaoPar.push(i)
+            }            
               
-        } console.log(arraiDeNumeros);
+        } console.log(numeroPar);
+        console.log(posicaoPar);
     }
     </script>
 </body>
