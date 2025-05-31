@@ -20,22 +20,22 @@
             var altura160 =0;
             var altura190 = 0;
             var mais100Kg = 0;
+            var pessoasComMenosQue50EAlturaMenosQue160 = 0;
+            var alturaMaisQue190EPessoasComMaisQue100 = 0;
             for( var i = 0; i < 7; i ++){
                 var pesoDigitado = Number(prompt("pesoDigitado"));
                 var alturaDigitada = Number(prompt("alturaDigitada"));
                 mediaAltura = mediaAltura + alturaDigitada;
                  if(pesoDigitado > 90){
-                   mais90Kg += 1;
+                   mais90Kg += 1
                  }
-                 if(pesoDigitado > 50 && alturaDigitada < 160)
+                 if(pesoDigitado < 50 && alturaDigitada < 160)
                 {
-                  pesoDigitado += 1;
-                  alturaDigitada += 1;
+                  pessoasComMenosQue50EAlturaMenosQue160 += 1
                 }
-                if(pesoDigitado > "100Kg" && alturaDigitada > 190)
+                if(pesoDigitado > 100 && alturaDigitada > 190)
                 {
-                     pesoDigitado +=1
-                     alturaDigitada +=1
+                   alturaMaisQue190EPessoasComMaisQue100 +=1
                 } 
             } mediaAltura = mediaAltura / 7; 
             console.log(" A média de altura do grupo   é : " + mediaAltura + " pessoas que pesam mais de " + 90  + mais90Kg + " pessoas que pesam menos de  50 "v+ " tem menos de 1.60m " + altura160 + " " + pesoDigitado + " pessoas que medem mais de 1.90m pesam mais de 100Kg : " + pesoDigitado + " " + alturaDigitada)
